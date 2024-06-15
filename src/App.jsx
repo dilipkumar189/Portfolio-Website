@@ -397,13 +397,13 @@ function App() {
               <div className="p-5 rounded-lg shadow-md">
                 <form action="#" method="POST" className="space-y-4">
                   <div>
-                    <input type="text" id="name" name="name" className="text-sm font-medium text-gray-700 bg-black mt-1 block w-full px-4 py-2 border border-gray-800 rounded-sm shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Name" />
+                    <input type="text" id="name" name="name" className="text-sm font-medium text-gray-500 bg-black mt-1 block w-full px-4 py-2 border border-gray-800 rounded-sm shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Name" />
                   </div>
                   <div>
-                    <input type="email" id="email" name="email" className="text-sm font-medium text-gray-700 bg-black mt-1 block w-full px-4 py-2 border border-gray-800 rounded-sm shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Email" />
+                    <input type="email" id="email" name="email" className="text-sm font-medium text-gray-500 bg-black mt-1 block w-full px-4 py-2 border border-gray-800 rounded-sm shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Email" />
                   </div>
                   <div>
-                    <textarea id="message" name="message" rows="4" className="text-sm font-medium text-gray-700 bg-black mt-1 block w-full px-4 py-2 border border-gray-800 rounded-sm shadow-sm focus:ring-blue-500 focus:border-blue-500">Message</textarea>
+                    <textarea id="message" name="message" rows="4" className="text-sm font-medium text-gray-500 bg-black mt-1 block w-full px-4 py-2 border border-gray-800 rounded-sm shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Message"></textarea>
                   </div>
                   <div>
                     <button type="submit" className="w-full px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Send Message</button>
