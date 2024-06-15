@@ -15,7 +15,6 @@ import Mysql from "./assets/mysql.png";
 import Mongodb from "./assets/mongodb.png";
 import Redux from "./assets/redux.png";
 
-
 import Bootstrap from "./assets/bootstrap.png";
 import Electron from "./assets/electron.svg";
 import Facebook from "./assets/facebook.svg";
@@ -23,28 +22,34 @@ import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
 import ArrowDown from "./assets/arrow-down.svg";
 import { useEffect, useState } from "react";
+import Mandal from "./components/modal/Mandal";
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
 
   const onPageScroll = () => {
-    if(window.pageYOffset > 200) {
-      setScrolling(true)
+    if (window.pageYOffset > 200) {
+      setScrolling(true);
     } else {
       setScrolling(false);
     }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", onPageScroll)
-    return() => {
-      window.removeEventListener("scroll", onPageScroll)
-    }
-  }, [])
+    window.addEventListener("scroll", onPageScroll);
+    return () => {
+      window.removeEventListener("scroll", onPageScroll);
+    };
+  }, []);
 
   return (
     <div className="max-w-4xl m-auto relative">
-      <header className={`${scrolling ? 'border-b border-gray-900' : ''}  fixed left-0 right-0 top-0 z-20`} id="home">
+      <header
+        className={`${
+          scrolling ? "border-b border-gray-900" : ""
+        }  fixed left-0 right-0 top-0 z-20`}
+        id="home"
+      >
         <div className="container m-auto px-4 py-6 max-w-4xl bg-black">
           <div className="flex flex-col gap-4 sm:flex-row justify-between items-center">
             <div>
@@ -53,17 +58,26 @@ function App() {
             <div>
               <ul className="flex gap-4">
                 <li>
-                  <a href="#projects" className="text-gray-400 hover:text-white cursor-pointer">
+                  <a
+                    href="#projects"
+                    className="text-gray-400 hover:text-white cursor-pointer"
+                  >
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a href="#technologies" className="text-gray-400 hover:text-white cursor-pointer">
+                  <a
+                    href="#technologies"
+                    className="text-gray-400 hover:text-white cursor-pointer"
+                  >
                     Technologies
                   </a>
                 </li>
                 <li>
-                  <a href="#aboutme" className="text-gray-400 hover:text-white cursor-pointer">
+                  <a
+                    href="#aboutme"
+                    className="text-gray-400 hover:text-white cursor-pointer"
+                  >
                     About me
                   </a>
                 </li>
@@ -79,25 +93,27 @@ function App() {
             <div>
               <h2 className="font-bold text-4xl">Hello, I'm Dilip Suthar,</h2>
               <div>
-                <h2 className="font-bold text-4xl mt-1 gradiant-text">Full Stack Developer</h2>
+                <h2 className="font-bold text-4xl mt-1 gradiant-text">
+                  Full Stack Developer
+                </h2>
               </div>
               <div>
                 <p className="my-10 text-gray-400">
-                  A Full Stack Developer builds complete web applications, handling front-end, back-end, and database management for seamless functionality.
+                  A Full Stack Developer builds complete web applications,
+                  handling front-end, back-end, and database management for
+                  seamless functionality.
                 </p>
                 <button className="px-8 shadow-gray-500 shadow-md py-3 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                   Download resume
                 </button>
               </div>
             </div>
-            <div className="relative">
-              <div className="after:bg-[url('./large-long.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
-                <img src={Porfile} className="relative z-10 w-[280px] m-auto sm:w-[600px] rounded-full" />
-              </div>
+            <div className="relative w-full">
+              <Mandal />
             </div>
           </div>
         </section>
-        
+
         {/* Projects section */}
         <section id="projects">
           <div className="container m-auto px-4 sm:py-12">
@@ -112,7 +128,9 @@ function App() {
                     Boutique Management System
                   </h3>
                   <p className="text-gray-400 text-sm mt-2">
-                    To streamline cricket tournament registration processes, ensuring seamless user management and team viewing functionality.
+                    To streamline cricket tournament registration processes,
+                    ensuring seamless user management and team viewing
+                    functionality.
                   </p>
                   <div className="flex mt-auto mb-0 gap-2">
                     <button className="flex-1 text-sm py-2 border rounded-full hover:border-blue-500 hover:text-blue-500">
@@ -130,7 +148,9 @@ function App() {
                     VPL - Cricket Tournament
                   </h3>
                   <p className="text-gray-400 text-sm mt-2">
-                    To streamline cricket tournament registration processes, ensuring seamless user management and team viewing functionality.
+                    To streamline cricket tournament registration processes,
+                    ensuring seamless user management and team viewing
+                    functionality.
                   </p>
                   <div className="flex mt-auto mb-0 gap-2">
                     <button className="flex-1 text-sm py-2 border rounded-full hover:border-blue-500 hover:text-blue-500">
@@ -148,7 +168,9 @@ function App() {
                     Electric Vehicles
                   </h3>
                   <p className="text-gray-400 text-sm mt-2">
-                    To streamline cricket tournament registration processes, ensuring seamless user management and team viewing functionality.
+                    To streamline cricket tournament registration processes,
+                    ensuring seamless user management and team viewing
+                    functionality.
                   </p>
                   <div className="flex mt-auto mb-0 gap-2">
                     <button className="flex-1 text-sm py-2 border rounded-full hover:border-blue-500 hover:text-blue-500">
@@ -166,7 +188,9 @@ function App() {
                     Portfolio Website
                   </h3>
                   <p className="text-gray-400 text-sm mt-2">
-                    To streamline cricket tournament registration processes, ensuring seamless user management and team viewing functionality.
+                    To streamline cricket tournament registration processes,
+                    ensuring seamless user management and team viewing
+                    functionality.
                   </p>
                   <div className="flex mt-auto mb-0 gap-2">
                     <button className="flex-1 text-sm py-2 border rounded-full hover:border-blue-500 hover:text-blue-500">
@@ -184,7 +208,9 @@ function App() {
                     India Bazaar
                   </h3>
                   <p className="text-gray-400 text-sm mt-2">
-                    To streamline cricket tournament registration processes, ensuring seamless user management and team viewing functionality.
+                    To streamline cricket tournament registration processes,
+                    ensuring seamless user management and team viewing
+                    functionality.
                   </p>
                   <div className="flex mt-auto mb-0 gap-2">
                     <button className="flex-1 text-sm py-2 border rounded-full hover:border-blue-500 hover:text-blue-500">
@@ -201,7 +227,7 @@ function App() {
         <section className="py-10" id="technologies">
           <div className="container m-auto px-4">
             <h2 className="text-2xl font-semibold">Technologies</h2>
-            <div className="mt-14">    
+            <div className="mt-14">
               <div class="grid grid-cols-4 md:grid-cols-7 gap-4 p-5">
                 <div class="text-center">
                   <img src={React} alt="" />
@@ -247,12 +273,10 @@ function App() {
                   <img src={Redux} alt="" />
                   {/* <h2 className="font-semibold">React</h2> */}
                 </div>
-
               </div>
-            </div> 
+            </div>
           </div>
         </section>
-
 
         {/* <section className="py-10" id="technologies">
           <div className="container m-auto px-4">
@@ -324,7 +348,7 @@ function App() {
                   Git & Github
                 </p>
               </div>
-              
+
               {/* <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
                   Wordpress
@@ -400,7 +424,11 @@ function App() {
           <div>
             <ul className="flex gap-4">
               <li>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={Facebook} className="w-5" alt="Facebook" />
                 </a>
               </li>
@@ -418,15 +446,16 @@ function App() {
           </div>
         </div>
       </footer>
-      {
-        scrolling && (
-          <button className="fixed block right-8 bottom-0 w-24" onClick={() => {
-            window.scrollTo(0,0);
-          }}>
-            <img src={ArrowDown} />
-          </button>
-        )
-      }
+      {scrolling && (
+        <button
+          className="fixed block right-8 bottom-0 w-24"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
+          <img src={ArrowDown} />
+        </button>
+      )}
     </div>
   );
 }
