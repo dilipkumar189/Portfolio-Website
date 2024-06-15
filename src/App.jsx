@@ -377,7 +377,7 @@ function App() {
             </div>
           </div>
         </section>
-        {/* <section className="py-8" id="aboutme">
+        <section className="py-8" id="aboutme">
           <div className="container m-auto px-4">
             <h2 className="text-2xl font-semibold">About me</h2>
             <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
@@ -414,7 +414,7 @@ function App() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
       <footer>
         <div className="container m-auto flex justify-between px-4 py-6">

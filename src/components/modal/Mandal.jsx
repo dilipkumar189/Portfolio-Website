@@ -8,6 +8,10 @@ import mysql from "../../assets/mysql.png";
 import mongodb from "../../assets/mongodb.png";
 import redux from "../../assets/redux.png";
 import bootstrap from "../../assets/bootstrap.png";
+import java from "../../assets/java.png";
+import tailwind from "../../assets/tailwind.png";
+import nextjs from "../../assets/nextjs.png";
+
 import "./styles.css";
 
 const Mandal = () => {
@@ -45,7 +49,7 @@ const Mandal = () => {
       </div>
       <div className="absolute rotate-90 w-[60%] h-[60%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
         <div className="h-full w-full animate-[spin_18s_linear_infinite] border border-primary rounded-full">
-          <img src={mongodb} className={MandalIconStyle} />
+          <img src={java} className={MandalIconStyle} />
         </div>
       </div>
       <div className="absolute rotate-[210deg] w-[60%] h-[60%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
@@ -55,7 +59,7 @@ const Mandal = () => {
       </div>
       <div className="absolute rotate-[330deg] w-[60%] h-[60%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
         <div className="h-full w-full animate-[spin_18s_linear_infinite] rounded-full">
-          <img src={express} className={MandalIconStyle} />
+          <img src={tailwind} className={MandalIconStyle} />
         </div>
       </div>
       <div className="absolute rotate-[120deg] w-[40%] h-[40%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
@@ -65,7 +69,7 @@ const Mandal = () => {
       </div>
       <div className="absolute rotate-[300deg] w-[40%] h-[40%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
         <div className="h-full w-full animate-[spin_18s_linear_infinite] rounded-full">
-          <img src={mongodb} className={MandalIconStyle} />
+          <img src={nextjs} className={MandalIconStyle} />
         </div>
       </div>
       <div className="absolute rotate-[120deg] w-[20%] h-[20%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
