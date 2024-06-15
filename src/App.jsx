@@ -378,6 +378,43 @@ function App() {
           </div>
         </section>
         <section className="py-8" id="aboutme">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-semibold mb-6">Contact Me</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 border border-gray-500 rounded-md">
+              {/* Contact Information */}
+              <div className="p-5 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
+                <p className="mb-2">
+                  <strong>Email:</strong> 
+                  <a href="mailto:suthardilip189@gmail.com" className="text-blue-500 hover:underline"> suthardilip189@gmail.com</a>
+                </p>
+                <p>
+                  <strong>Mobile:</strong>
+                  <a href="tel:+918502063255" className="text-blue-500 hover:underline"> +91 8502063255</a>
+                </p>
+              </div>
+              {/* Contact Form */}
+              <div className="p-5 rounded-lg shadow-md">
+                <form action="#" method="POST" className="space-y-4">
+                  <div>
+                    <input type="text" id="name" name="name" className="text-sm font-medium text-gray-700 bg-black mt-1 block w-full px-4 py-2 border border-gray-800 rounded-sm shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Name" />
+                  </div>
+                  <div>
+                    <input type="email" id="email" name="email" className="text-sm font-medium text-gray-700 bg-black mt-1 block w-full px-4 py-2 border border-gray-800 rounded-sm shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Email" />
+                  </div>
+                  <div>
+                    <textarea id="message" name="message" rows="4" className="text-sm font-medium text-gray-700 bg-black mt-1 block w-full px-4 py-2 border border-gray-800 rounded-sm shadow-sm focus:ring-blue-500 focus:border-blue-500">Message</textarea>
+                  </div>
+                  <div>
+                    <button type="submit" className="w-full px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <section className="py-8" id="aboutme">
           <div className="container m-auto px-4">
             <h2 className="text-2xl font-semibold">About me</h2>
             <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
@@ -414,7 +451,7 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <footer>
         <div className="container m-auto flex justify-between px-4 py-6">
