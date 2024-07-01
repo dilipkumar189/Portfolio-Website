@@ -14,7 +14,7 @@ Former digital-marketing specialist, seeking to apply competent development skil
 
 --------Projects--------------
 -> Project 1
-# heading
+
 Furniture store landing page
 # sub heading
 Responsive HTML/CSS layout for online furniture store. HTML5, CSS3 (SCSS)
